@@ -17,11 +17,11 @@ module.exports = client;
 });
 
 client.once('ready', () => {
-  console.log(`[READY] ${client.user.tag} is ready`)
+  console.log(`[READY]: ${client.user.tag} is ready`)
 })
 
 process.on('unhandledRejection', err => {
-  console.log(`[ERROR] Unhandled promise rejection: ${err.message}.`);
+  console.log(`[ERROR]: Unhandled promise rejection: ${err.message}.`);
   console.log(err);
 });
 
