@@ -1,11 +1,10 @@
 const client = require('../../index.js');
-
 client.on("interactionCreate", async(interaction) => {
     if(interaction.isCommand()) {
         await interaction.deferReply(({
-            ephemeral: false
+            ephemeral: false,
         })).catch(() => {});
-
+      console.log('ready')
         const cmd = client.slashCommands.get(interaction.commandName);
         if(!cmd)
         return interaction.followUp({
