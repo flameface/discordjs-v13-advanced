@@ -5,7 +5,6 @@ const client = new Client({
     intents: 32767
 });
 
-
 client.commands = new Collection();
 client.aliases = new Collection();
 client.categories = fs.readdirSync("./Commands");
