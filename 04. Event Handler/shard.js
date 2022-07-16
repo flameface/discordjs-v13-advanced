@@ -11,3 +11,4 @@ manager.on('shardCreate', shard => {
 });
 
 manager.spawn();
+// not to use before 2000 servers
