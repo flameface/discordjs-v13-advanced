@@ -11,3 +11,5 @@ manager.on('shardCreate', shard => {
 });
 
 manager.spawn();
+
+//Use it only if your bot is in 2000+ servers
